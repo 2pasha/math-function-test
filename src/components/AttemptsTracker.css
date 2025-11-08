@@ -1,0 +1,57 @@
+.attempts-tracker {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.attempts-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.attempts-text {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+.remaining-text {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.attempts-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.attempts-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #45a049);
+  transition: width 0.3s ease;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .attempts-tracker {
+    padding: 0.875rem;
+  }
+
+  .attempts-text {
+    font-size: 0.95rem;
+  }
+
+  .remaining-text {
+    font-size: 0.85rem;
+  }
+}
+
