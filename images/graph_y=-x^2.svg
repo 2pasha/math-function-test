@@ -1,23 +1,18 @@
 <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
   <rect width="200" height="200" fill="#f9f9f9"/>
   
-  <!-- Grid lines -->
   <line x1="0" y1="100" x2="200" y2="100" stroke="#e0e0e0" stroke-width="1"/>
   <line x1="100" y1="0" x2="100" y2="200" stroke="#e0e0e0" stroke-width="1"/>
   
-  <!-- Axes -->
   <line x1="0" y1="100" x2="200" y2="100" stroke="#333" stroke-width="2"/>
   <line x1="100" y1="0" x2="100" y2="200" stroke="#333" stroke-width="2"/>
   
-  <!-- Axis arrows -->
   <polygon points="200,100 195,97 195,103" fill="#333"/>
   <polygon points="100,0 97,5 103,5" fill="#333"/>
   
-  <!-- Function: y = cos(x) (cosine wave starting at peak) -->
-  <path d="M 10 40 Q 40 100, 60 100 T 110 100 T 160 100 T 190 160" stroke="#009688" stroke-width="3" fill="none"/>
+  <polyline points="10 200,20,180.00 25,170.31 30,161.25 35,152.81 40,145.00 45,137.81 50,131.25 55,125.31 60,120.00 65,115.31 70,111.25 75,107.81 80,105.00 85,102.81 90,101.25 95,100.31 100,100.00 105,100.31 110,101.25 115,102.81 120,105.00 125,107.81 130,111.25 135,115.31 140,120.00 145,125.31 150,131.25 155,137.81 160,145.00 165,152.81 170,161.25 175,170.31 180,180.00 190 200" 
+            stroke="#FF5722" stroke-width="3" fill="none"/>
   
-  <!-- Labels -->
   <text x="185" y="95" font-size="12" fill="#333">x</text>
   <text x="105" y="15" font-size="12" fill="#333">y</text>
 </svg>
