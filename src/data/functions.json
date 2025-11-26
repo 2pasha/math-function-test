@@ -3,125 +3,139 @@
     {
       "id": 1,
       "equation": "y = x",
-      "graphId": 1,
-      "description": "Лінійна функція з нахилом 1"
+      "graphId": 1
     },
     {
       "id": 2,
       "equation": "y = x²",
-      "graphId": 2,
-      "description": "Квадратична функція"
+      "graphId": 2
     },
     {
       "id": 3,
-      "equation": "y = 2x + 1",
-      "graphId": 3,
-      "description": "Лінійна функція з нахилом 2"
+      "equation": "y = x³",
+      "graphId": 3
     },
     {
       "id": 4,
-      "equation": "y = sin(x)",
-      "graphId": 4,
-      "description": "Функція синуса"
+      "equation": "y = √x",
+      "graphId": 4
     },
     {
       "id": 5,
-      "equation": "y = 1/x",
-      "graphId": 5,
-      "description": "Гіперболічна функція"
+      "equation": "y = √(-x)",
+      "graphId": 5
     },
     {
       "id": 6,
-      "equation": "y = -x",
-      "graphId": 8,
-      "description": "Від'ємна лінійна функція"
+      "equation": "y = |x|",
+      "graphId": 6
     },
     {
       "id": 7,
-      "equation": "y = cos(x)",
-      "graphId": 9,
-      "description": "Функція косинуса"
+      "equation": "y = -x",
+      "graphId": 7
     },
     {
       "id": 8,
-      "equation": "y = √x",
-      "graphId": 10,
-      "description": "Функція квадратного кореня"
+      "equation": "y = -x²",
+      "graphId": 8
     },
     {
       "id": 9,
-      "equation": "y = |x|",
-      "graphId": 11,
-      "description": "Функція модуля"
+      "equation": "y = -x³",
+      "graphId": 9
     },
     {
       "id": 10,
-      "equation": "y = -x²",
-      "graphId": 12,
-      "description": "Перевернута парабола"
+      "equation": "y = -√x",
+      "graphId": 10
+    },
+    {
+      "id": 11,
+      "equation": "y = -|x|",
+      "graphId": 11
+    },
+    {
+      "id": 12,
+      "equation": "y = 1/x",
+      "graphId": 12
+    },
+    {
+      "id": 13,
+      "equation": "y = -1/x",
+      "graphId": 13
+    },
+    {
+      "id": 14,
+      "equation": "y = 2",
+      "graphId": 14
+    },
+    {
+      "id": 15,
+      "equation": "x = 2",
+      "graphId": 15
     }
   ],
   "graphs": [
     {
       "id": 1,
-      "imageUrl": "images/graph-linear.svg",
-      "alt": "Графік лінійної функції y=x"
+      "imageUrl": "images/graph_y=x.svg"
     },
     {
       "id": 2,
-      "imageUrl": "images/graph-quadratic.svg",
-      "alt": "Графік квадратичної функції y=x²"
+      "imageUrl": "images/graph_y=x^2.svg"
     },
     {
       "id": 3,
-      "imageUrl": "images/graph-linear-2.svg",
-      "alt": "Графік лінійної функції y=2x+1"
+      "imageUrl": "images/graph_y=x^3.svg"
     },
     {
       "id": 4,
-      "imageUrl": "images/graph-sine.svg",
-      "alt": "Графік функції синуса"
+      "imageUrl": "images/graph_y=sqrt(x).svg"
     },
     {
       "id": 5,
-      "imageUrl": "images/graph-hyperbola.svg",
-      "alt": "Графік гіперболи y=1/x"
+      "imageUrl": "images/graph_y=sqrt(-x).svg"
     },
     {
       "id": 6,
-      "imageUrl": "images/graph-exponential.svg",
-      "alt": "Графік експоненти y=e^x (хибний варіант)"
+      "imageUrl": "images/graph_y=abs(x).svg"
     },
     {
       "id": 7,
-      "imageUrl": "images/graph-cubic.svg",
-      "alt": "Графік кубічної функції y=x³ (хибний варіант)"
+      "imageUrl": "images/graph_y=-x.svg"
     },
     {
       "id": 8,
-      "imageUrl": "images/graph-negative-linear.svg",
-      "alt": "Графік від'ємної лінійної функції y=-x"
+      "imageUrl": "images/graph_y=-x^2.svg"
     },
     {
       "id": 9,
-      "imageUrl": "images/graph-cosine.svg",
-      "alt": "Графік функції косинуса"
+      "imageUrl": "images/graph_y=-x^3.svg"
     },
     {
       "id": 10,
-      "imageUrl": "images/graph-sqrt.svg",
-      "alt": "Графік функції квадратного кореня y=√x"
+      "imageUrl": "images/graph_y=-sqrt(x).svg"
     },
     {
       "id": 11,
-      "imageUrl": "images/graph-absolute.svg",
-      "alt": "Графік функції модуля y=|x|"
+      "imageUrl": "images/graph_y=-abs(x).svg"
     },
     {
       "id": 12,
-      "imageUrl": "images/graph-negative-quadratic.svg",
-      "alt": "Графік перевернутої параболи y=-x²"
+      "imageUrl": "images/graph_y=1divx.svg"
+    },
+    {
+      "id": 13,
+      "imageUrl": "images/graph_y=-1divx.svg"
+    },
+    {
+      "id": 14,
+      "imageUrl": "images/graph_y=2.svg"
+    },
+    {
+      "id": 15,
+      "imageUrl": "images/graph_x=2.svg"
     }
   ]
 }
-

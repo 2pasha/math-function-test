@@ -14,8 +14,8 @@
   <polygon points="200,100 195,97 195,103" fill="#333"/>
   <polygon points="100,0 97,5 103,5" fill="#333"/>
   
-  <!-- Function: y = -x² (inverted parabola) -->
-  <path d="M 20 10 Q 100 100 180 10" stroke="#795548" stroke-width="3" fill="none"/>
+  <!-- Function: y = -x (diagonal line from top-left to bottom-right) -->
+  <line x1="0" y1="0" x2="200" y2="200" stroke="#FF5722" stroke-width="3"/>
   
   <!-- Labels -->
   <text x="185" y="95" font-size="12" fill="#333">x</text>

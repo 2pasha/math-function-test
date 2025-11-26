@@ -1,23 +1,18 @@
 <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
   <rect width="200" height="200" fill="#f9f9f9"/>
   
-  <!-- Grid lines -->
   <line x1="0" y1="100" x2="200" y2="100" stroke="#e0e0e0" stroke-width="1"/>
   <line x1="100" y1="0" x2="100" y2="200" stroke="#e0e0e0" stroke-width="1"/>
   
-  <!-- Axes -->
   <line x1="0" y1="100" x2="200" y2="100" stroke="#333" stroke-width="2"/>
   <line x1="100" y1="0" x2="100" y2="200" stroke="#333" stroke-width="2"/>
   
-  <!-- Axis arrows -->
   <polygon points="200,100 195,97 195,103" fill="#333"/>
   <polygon points="100,0 97,5 103,5" fill="#333"/>
   
-  <!-- Function: y = 2x + 1 (steeper line, shifted up) -->
-  <line x1="40" y1="180" x2="160" y2="10" stroke="#FF9800" stroke-width="3"/>
+  <polyline points="100,100.00 105,82.11 110,71.72 115,63.69 120,57.16 125,51.61 130,46.72 135,42.32 140,38.28 145,34.53 150,31.01 155,27.69 160,24.53 165,21.51 170,18.61 175,15.82 180,13.13 185,10.54 190,8.16 195,5.98 200,4.00" 
+            stroke="#009688" stroke-width="3" fill="none"/>
   
-  <!-- Labels -->
   <text x="185" y="95" font-size="12" fill="#333">x</text>
   <text x="105" y="15" font-size="12" fill="#333">y</text>
 </svg>

@@ -1,24 +1,18 @@
 <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
   <rect width="200" height="200" fill="#f9f9f9"/>
   
-  <!-- Grid lines -->
   <line x1="0" y1="100" x2="200" y2="100" stroke="#e0e0e0" stroke-width="1"/>
   <line x1="100" y1="0" x2="100" y2="200" stroke="#e0e0e0" stroke-width="1"/>
   
-  <!-- Axes -->
   <line x1="0" y1="100" x2="200" y2="100" stroke="#333" stroke-width="2"/>
   <line x1="100" y1="0" x2="100" y2="200" stroke="#333" stroke-width="2"/>
   
-  <!-- Axis arrows -->
   <polygon points="200,100 195,97 195,103" fill="#333"/>
   <polygon points="100,0 97,5 103,5" fill="#333"/>
   
-  <!-- Function: y = -x (diagonal line from top-left to bottom-right) -->
-  <line x1="20" y1="20" x2="180" y2="180" stroke="#FF5722" stroke-width="3"/>
+  <polyline points="15 200,20,180.00 25,165.92 30,153.59 35,142.91 40,133.75 45,126.00 50,119.53 55,114.24 60,110.00 65,106.70 70,104.22 75,102.44 80,101.25 85,100.53 90,100.16 95,100.02 100,100.00 105,99.98 110,99.84 115,99.47 120,98.75 125,97.56 130,95.78 135,93.30 140,90.00 145,85.76 150,80.47 155,74.00 160,66.25 165,57.09 170,46.41 175,34.08 180,20.00 186, 0" 
+            stroke="#3F51B5" stroke-width="3" fill="none"/>
   
-  <!-- Labels -->
   <text x="185" y="95" font-size="12" fill="#333">x</text>
   <text x="105" y="15" font-size="12" fill="#333">y</text>
 </svg>
-

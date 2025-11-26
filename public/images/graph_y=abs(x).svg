@@ -1,23 +1,18 @@
 <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
   <rect width="200" height="200" fill="#f9f9f9"/>
   
-  <!-- Grid lines -->
   <line x1="0" y1="100" x2="200" y2="100" stroke="#e0e0e0" stroke-width="1"/>
   <line x1="100" y1="0" x2="100" y2="200" stroke="#e0e0e0" stroke-width="1"/>
   
-  <!-- Axes -->
   <line x1="0" y1="100" x2="200" y2="100" stroke="#333" stroke-width="2"/>
   <line x1="100" y1="0" x2="100" y2="200" stroke="#333" stroke-width="2"/>
   
-  <!-- Axis arrows -->
   <polygon points="200,100 195,97 195,103" fill="#333"/>
   <polygon points="100,0 97,5 103,5" fill="#333"/>
   
-  <!-- Function: y = √x (square root curve, only right side) -->
-  <path d="M 100 100 Q 110 90, 130 70 Q 150 55, 170 45 Q 180 40, 190 35" stroke="#673AB7" stroke-width="3" fill="none"/>
+  <polyline points="0,0 100,100 200,0" 
+            stroke="#673AB7" stroke-width="3" fill="none" stroke-linejoin="miter"/>
   
-  <!-- Labels -->
   <text x="185" y="95" font-size="12" fill="#333">x</text>
   <text x="105" y="15" font-size="12" fill="#333">y</text>
 </svg>

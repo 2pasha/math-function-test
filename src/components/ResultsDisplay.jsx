@@ -1,7 +1,7 @@
 import React from 'react';
 import './ResultsDisplay.css';
 
-const ResultsDisplay = ({ validationResult, onRetry, canRetry }) => {
+const ResultsDisplay = ({ validationResult, canRetry }) => {
   const { score, correctCount, totalQuestions, results } = validationResult;
 
   const getScoreClass = () => {
@@ -48,14 +48,10 @@ const ResultsDisplay = ({ validationResult, onRetry, canRetry }) => {
       </div>
 
       <div className="results-actions">
-        {canRetry ? (
-          <button className="retry-button" onClick={onRetry}>
-            Спробувати ще раз
-          </button>
-        ) : (
+        {!canRetry && (
           <div className="no-attempts-message">
-            <p>Ви використали всі свої спроби.</p>
-            <p className="hint">Очистіть дані браузера, щоб скинути лічильник.</p>
+            <p>✓ Ви успішно завершили тест!</p>
+            <p>У вас була одна спроба, і ви її використали.</p>
           </div>
         )}
       </div>

@@ -142,7 +142,7 @@
 }
 
 .no-attempts-message {
-  padding: 1rem;
+  padding: 1.5rem;
   background: #fff3cd;
   border: 1px solid #ffc107;
   border-radius: 8px;
@@ -151,6 +151,24 @@
 
 .no-attempts-message p {
   margin: 0.5rem 0;
+}
+
+.no-attempts-message .reset-button {
+  margin-top: 1.5rem;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.no-attempts-message .reset-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
 }
 
 .hint {

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import FunctionColumn from './FunctionColumn';
 import GraphColumn from './GraphColumn';
-import AttemptsTracker from './AttemptsTracker';
 import ResultsDisplay from './ResultsDisplay';
 import { validateMatches, areAllMatched } from '../utils/scoring';
 import './TestInterface.css';
@@ -9,11 +8,8 @@ import './TestInterface.css';
 const TestInterface = ({ 
   functions, 
   graphs, 
-  attemptCount, 
-  maxAttempts, 
-  remainingAttempts,
-  onSubmit,
-  onRetry
+  hasReachedLimit,
+  onSubmit
 }) => {
   const [selectedFunction, setSelectedFunction] = useState(null);
   const [userMatches, setUserMatches] = useState({});
@@ -50,34 +46,33 @@ const TestInterface = ({
     onSubmit(); // Increment attempt count
   };
 
-  const handleRetry = () => {
-    setUserMatches({});
-    setSelectedFunction(null);
-    setShowResults(false);
-    setValidationResult(null);
-    onRetry(); // Trigger test regeneration in parent
-  };
-
   const allMatched = areAllMatched(userMatches, functions);
 
   if (showResults && validationResult) {
     return (
       <ResultsDisplay
         validationResult={validationResult}
-        onRetry={handleRetry}
-        canRetry={remainingAttempts > 0}
+        canRetry={!hasReachedLimit}
       />
+    );
+  }
+
+  // If user has already used their attempt, show message
+  if (hasReachedLimit) {
+    return (
+      <div className="limit-reached-message">
+        <div className="limit-icon">🔒</div>
+        <h2>Ви вже використали свою спробу</h2>
+        <p>У вас є лише одна спроба для проходження цього тесту.</p>
+        <p className="hint">
+          Цей тест можна пройти лише один раз.
+        </p>
+      </div>
     );
   }
 
   return (
     <div className="test-interface">
-      <AttemptsTracker
-        currentAttempt={attemptCount}
-        maxAttempts={maxAttempts}
-        remainingAttempts={remainingAttempts}
-      />
-
       <div className="test-content">
         <FunctionColumn
           functions={functions}
